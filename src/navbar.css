@@ -1,0 +1,39 @@
+#leftbar{
+  width: 300px;
+  height: 580px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Mywebsite{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#history{
+  width: 300px; 
+  height: 410px; 
+  background-color: white; 
+  border-radius: 3%;
+}
+
+/* เพิ่มการปรับแต่ง CSS สำหรับตัวอย่างนี้ */
+.scrollable-slider {
+  max-height: 410px; /* ระบุความสูงสูงสุดของสไลด์บาร์ */
+  overflow-y: scroll; /* เปิดใช้งานการสกีรอลล์ในแนวแกน Y */
+}
+
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.list-group-item {
+  animation: fadeInDown 0.5s ease forwards;
+}
+
